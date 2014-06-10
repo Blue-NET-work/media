@@ -108,6 +108,7 @@ a:hover{text-decoration:none;}
 	width:355px;
 	height:362px;
 	bottom:0;
+	z-index:10;
 }
 
 #sectionLogo .sectionLogoOrigamiBird{
@@ -115,8 +116,9 @@ a:hover{text-decoration:none;}
 	position:absolute;
 	width:457px;
 	height:461px;
-	top:15%;
+	top:30%;
 	right:5%;
+	z-index:10;
 }
 
 #sectionLogo .sectionLogoOrigamiBox{
@@ -126,7 +128,23 @@ a:hover{text-decoration:none;}
 	height:650px;
 	top:10%;
 	left:40%;
+	z-index:10;
 }
+
+#sectionLogo .logo{
+	position:relative;
+	z-index:30;
+}
+
+#sectionLogo .logo #logo{
+	background:url(../img/sectionLogo/logo.png) no-repeat;
+	display:block;
+	width:498px;
+	height:498px;
+	margin:95px auto;
+}
+
+
 
 
 /**************************************************************
@@ -148,9 +166,40 @@ a:hover{text-decoration:none;}
 	font-weight:300;
 }
 
+#recommend .header p{
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:12px;
+	color:#656b69;
+}
+
 #recommend .img-responsive{
+	margin:auto;
+}
+
+#recommend h4{
+	color:#2ab3ac;
+	font-size:18px;
+	text-transform:uppercase;
+	margin-top:40px;
+	margin-bottom:25px;
+}
+
+#recommend p{
+	font-weight:300;
+	font-size:12px;
+	color:#283a39;
+}
+
+
+/**************************************************************
+============	section offer
+**************************************************************/
+#offer{
+	background:url(../img/sectionOffer/bg.jpg) fixed no-repeat;
 	width:100%;
-	height:100%;
+	min-height:906px;
+	padding:60px 0;
 }
 
 
@@ -161,6 +210,10 @@ footer{
 	margin-top:320px;
 }
 
+
+/***********************************
+// CONTACT DATA
+***********************************/
 .contactData{
 	font-size:12px;
 	color:#283a39;
@@ -198,7 +251,7 @@ footer{
 }
 
 .contactData hr{
-	margin-top:30px;
+	margin-top:50px;
 	margin-bottm:20px;
 	color: #e1e1e1;
 }
@@ -216,8 +269,29 @@ footer{
 	text-shadow:none;
 }
 
+/***********************************
+// MAPS 
+***********************************/
+#maps{
+	padding:40px 0;
+}
+
+#maps #map{
+	position:relative;
+	width:100%;
+	height:370px;
+	display: block;
+	margin: 0 auto;
+}
+
+#map.large{
+  height:500px;
+}
+
+/***********************************
+// COPYRIGHT 
+***********************************/
 #copyright{
-	margin-top:30px;
 	font-size:11px;
 	padding:10px 0;
 }
