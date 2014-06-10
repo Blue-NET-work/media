@@ -1,0 +1,239 @@
+@charset "utf-8";
+/*
+Template Name: media-theme
+Version: 1.00.0
+Theme URI: http://Blue-NET.pl
+Author: Blue-NET Mateusz Serwinowski
+Author URI: http://Blue-NET.pl
+Contact: support@blue-net.pl
+Description: media-theme theme by Blue-NET
+License: Custom
+License URI: URI: http://themeforest.net/licenses
+*/
+
+@import url("../plugins/bootstrap/css/bootstrap.css");
+@import url("../plugins/bootstrap/css/bootstrap-theme.css");
+@import url("../plugins/font-awesome/css/font-awesome.css");
+
+
+html, body{min-height:100%;}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color:#283a39;
+}
+
+
+a:hover{text-decoration:none;}
+
+
+.m-t-0{margin-top:0px;}
+.m-t-10{margin-top:10px;}
+.m-t-15{margin-top:15px;}
+.m-t-20{margin-top:20px;}
+.m-t-25{margin-top:25px;}
+.m-t-30{margin-top:30px;}
+.m-t-35{margin-top:35px;}
+.m-t-40{margin-top:40px;}
+.m-t-45{margin-top:45px;}
+.m-t-50{margin-top:50px;}
+.m-t-55{margin-top:55px;}
+
+.m-b-10{margin-bottom:10px;}
+.m-b-20{margin-bottom:20px;}
+.m-b-25{margin-bottom:25px;}
+.m-b-30{margin-bottom:30px;}
+.m-b-35{margin-bottom:35px;}
+.m-b-40{margin-bottom:40px;}
+.m-b-45{margin-bottom:45px;}
+.m-b-50{margin-bottom:50px;}
+.m-b-55{margin-bottom:55px;}
+
+
+/**************************************************************
+============	Header
+**************************************************************/
+.header-nav{
+	height:62px;
+	background:#fff; 
+	text-transform:uppercase;
+}
+
+.header-nav .navbar-header{
+	height:62px;
+	vertical-align:middle;
+	font-size:12px;
+}
+
+.topbar{
+	padding-top:20px;
+	color:#283a39;
+}
+
+.topbar .fa{padding-left:5px; padding-right:3px;}
+
+.topbar span{
+	color:#159892;
+	font-weight:bold;
+}
+
+.header-nav .navbar-nav > li > a{
+	color:#283a39; 
+	padding-top:21px; 
+	padding-bottom:21px;
+	font-size:12px;
+	font-weight:300;
+}
+
+.header-nav .navbar-nav > li > a:hover{
+	background:none;
+	font-weight:400;
+}
+
+
+/**************************************************************
+============	section logo
+**************************************************************/
+#sectionLogo{
+	background:url(../img/sectionLogo/bg.jpg) fixed no-repeat;
+	background-size:cover;
+	position:relative;
+	width:100%;
+	min-height:832px;
+}
+
+#sectionLogo .sectionLogoOrigamiBall{
+	background:url(../img/sectionLogo/ball.png) no-repeat;
+	position:absolute;
+	width:355px;
+	height:362px;
+	bottom:0;
+}
+
+#sectionLogo .sectionLogoOrigamiBird{
+	background:url(../img/sectionLogo/bird.png) no-repeat;
+	position:absolute;
+	width:457px;
+	height:461px;
+	top:15%;
+	right:5%;
+}
+
+#sectionLogo .sectionLogoOrigamiBox{
+	background:url(../img/sectionLogo/box.png) no-repeat;
+	position:absolute;
+	width:650px;
+	height:650px;
+	top:10%;
+	left:40%;
+}
+
+
+/**************************************************************
+============	section recommend
+**************************************************************/
+#recommend{
+	padding:60px 0;
+}
+
+#recommend .header h3{
+	font-family: 'Roboto', sans-serif;
+	text-transform:uppercase;
+	font-size:30px;
+	color:#2ab3ac;
+	font-weight:400;
+}
+
+#recommend .header h3 span{
+	font-weight:300;
+}
+
+#recommend .img-responsive{
+	width:100%;
+	height:100%;
+}
+
+
+/**************************************************************
+============	section footer
+**************************************************************/
+footer{
+	margin-top:320px;
+}
+
+.contactData{
+	font-size:12px;
+	color:#283a39;
+}
+
+.contactData h3.titleTag{
+	font-weight:600;
+	text-align:right;
+	font-size:51px;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+.contactData .contactlocation,
+.contactData .contactphone,
+.contactData .contactmail{
+	background:url(../img/icon.png) no-repeat;	
+}
+
+.contactData .contactlocation{
+	padding:3px 0 4px 35px;
+	margin-top:20px;
+	margin-bottom:35px;
+}
+
+.contactData .contactphone{
+	padding:3px 0 4px 35px;
+	background-position:0 -65px;
+	margin-bottom:35px;
+}
+
+.contactData .contactmail{
+	padding:3px 0 4px 35px;
+	background-position:0 -126px;
+}
+
+.contactData hr{
+	margin-top:30px;
+	margin-bottm:20px;
+	color: #e1e1e1;
+}
+
+#footer form .input-group-addon{
+	background:#fbfbfb;
+	border-right-color:#fbfbfb;
+}
+
+#footer form button{
+	background:#2ab3ac;
+	text-align:center;
+	width:100%;
+	color:#fff;
+	text-shadow:none;
+}
+
+#copyright{
+	margin-top:30px;
+	font-size:11px;
+	padding:10px 0;
+}
+
+#copyright a.social{
+	display:inline-block;
+	background:#000;
+	border-radius:30px;
+	text-align:center;
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	color:#fff;
+	padding:3px;
+}
+
+#copyright a.social:hover{
+	background:#40bfb3;
+}
