@@ -206,11 +206,44 @@ a:hover{text-decoration:none;}
 **************************************************************/
 #offer{
 	background:url(../img/sectionOffer/bg.jpg) fixed no-repeat;
+	position:relative;
 	width:100%;
 	min-height:906px;
-	padding:60px 0;
 }
 
+#offer .bgBall{
+	background:url(../img/sectionOffer/bgBall.png) fixed no-repeat center;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+#offer .phone{
+	background:url(../img/sectionOffer/phone.png) no-repeat;
+	position:absolute;
+	width:351px;
+	height:420px;
+	right: 10%;
+	top: -25%;
+}
+
+#offer .smallBall{
+	background:url(../img/sectionOffer/smallBall.png) no-repeat;
+	position:absolute;
+	width:143px;
+	height:143px;
+	left:20%;
+	bottom:0%;
+}
+
+#offer .ball{
+	background:url(../img/sectionOffer/ball.png) no-repeat;
+	position:absolute;
+	width:417px;
+	height:426px;
+	right:10%;
+	bottom:-10%;
+}
 
 /**************************************************************
 ============	section portfolio
