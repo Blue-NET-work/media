@@ -164,8 +164,8 @@ Contact: support@blue-net.pl
 			<div class="row">
 				<div class="col-md-6"><p>Sed ut perspiciatis unde omnis iste natus voluptatem<br>accusantium doloremque laudantium.</p></div>
 				<div class="col-md-6 text-right portfolio-list-action">
-					<a href="#" class="fa fa-2x fa-th-large"></a>
-					<a href="#" class="fa fa-2x fa-th"></a>
+					<a href="#" class="fa fa-2x fa-th-large" id="projectListLarge"></a>
+					<a href="#" class="fa fa-2x fa-th" id="projectListStandard"></a>
 				</div>
 			</div>
 		</div>
@@ -174,62 +174,62 @@ Contact: support@blue-net.pl
     	<div id="portfolioProject">
 			<div class="apple"></div>
         	<ul class="list-unstyled row m-b-20">
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project1.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-6">
+            	<li class="col-md-4">
 					<div class="padding-25">
 						<h4 class="title">Your dreams <span>our purpose</span></h4>
 						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 						<a href="#" class="more">read more</a>
 					</div>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project2.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project3.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project4.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project5.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project6.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project7.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project8.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project9.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project10.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project11.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project12.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
-            	<li class="col-md-3">
+            	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project13.jpg" alt="">
                     <a href="#"><span class="projectGo"></span></a>
                 </li>
@@ -360,6 +360,18 @@ $(document).ready(function(){
 	$('#portfolio').parallax("0%", 0);
 	$('#team').parallax("50%", 0.4);
 	$('#contact').parallax("50%", 0.5);
+	
+	$("#projectListLarge").on("click", function(e){
+		e.preventDefault();
+		$("#portfolioProject").find("li.col-md-2").addClass('col-md-3').removeClass('col-md-2');
+		$("#portfolioProject").find("li.col-md-4").addClass('col-md-6').removeClass('col-md-4');
+	});	
+	
+	$("#projectListStandard").on("click", function(e){
+		e.preventDefault();
+		$("#portfolioProject").find("li.col-md-3").addClass('col-md-2').removeClass('col-md-3');
+		$("#portfolioProject").find("li.col-md-6").addClass('col-md-4').removeClass('col-md-6');
+	});	
 
 });
 </script>

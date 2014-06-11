@@ -261,15 +261,22 @@ a:hover{text-decoration:none;}
 	left:-15%;
 }
 
+#portfolio #portfolioProject ul li.col-md-2,
 #portfolio #portfolioProject ul li.col-md-3,
+#portfolio #portfolioProject ul li.col-md-4,
 #portfolio #portfolioProject ul li.col-md-6{
 	padding:0;
 	
 }
 
 #portfolio #portfolioProject ul li img{
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
+}
+
+#portfolio #portfolioProject ul li,
+#portfolio #portfolioProject ul li img{
+	transition: all 2s;
 }
 
 #portfolio #portfolioProject ul li h4{
