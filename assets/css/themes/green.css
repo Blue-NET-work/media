@@ -1,0 +1,95 @@
+/*
+Template Name: media-theme
+Version: 1.00.0
+Theme URI: http://Blue-NET.pl
+Author: Blue-NET Mateusz Serwinowski
+Author URI: http://Blue-NET.pl
+Contact: support@blue-net.pl
+Description: media-theme theme by Blue-NET
+License: Custom
+License URI: URI: http://themeforest.net/licenses
+*/
+
+body{
+}
+
+
+/**************************************************************
+============	Header
+**************************************************************/
+.header-nav{
+}
+
+.topbar{
+}
+
+.topbar span{
+	color:#159892;
+}
+
+.header-nav .navbar-nav > li > a{
+}
+
+.header-nav .navbar-nav > li > a:hover{
+}
+
+
+/**************************************************************
+============	section logo
+**************************************************************/
+#sectionLogo{
+}
+
+/**************************************************************
+============	section recommend
+**************************************************************/
+#recommend .header h3{
+	color:#159892;
+}
+
+#recommend .header p{
+	color:#656b69;
+}
+
+#recommend h4{
+	color:#159892;
+}
+
+#recommend p{
+	color:#283a39;
+}
+
+
+/**************************************************************
+============	section offer
+**************************************************************/
+#offer{
+}
+
+
+/**************************************************************
+============	section footer
+**************************************************************/
+
+
+/***********************************
+// CONTACT DATA
+***********************************/
+.contactData{
+	color:#283a39;
+}
+
+#footer form button{
+	background:#159892;
+}
+
+
+/***********************************
+// COPYRIGHT 
+***********************************/
+#copyright a.social{
+}
+
+#copyright a.social:hover{
+	background:#159892;
+}
