@@ -204,6 +204,42 @@ a:hover{text-decoration:none;}
 
 
 /**************************************************************
+============	section portfolio
+**************************************************************/
+#portfolio{
+	background:#fff url(../img/sectionFolio/bg.jpg) top center repeat-x;
+	width:100%;
+	min-height:906px;
+	padding:60px 0;
+}
+
+#portfolio .header{
+	color:#283a39;
+	font-size:13px;
+	margin-top:40px;
+}
+
+#portfolio .header h3{
+	font-size:53px;
+	font-weight:600;
+	text-transform:uppercase;
+	margin-bottom:40px;
+}
+
+
+/**************************************************************
+============	section team
+**************************************************************/
+#team{
+	background:url(../img/sectionTeam/bg.jpg) fixed no-repeat;
+	background-size:cover;
+	width:100%;
+	min-height:906px;
+	padding:60px 0;
+}
+
+
+/**************************************************************
 ============	section footer
 **************************************************************/
 footer{

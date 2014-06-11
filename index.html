@@ -77,7 +77,7 @@ Contact: support@blue-net.pl
           <li class="active"><a href="#sectionLogo">Strona Główna</a></li>
           <li><a href="#recommend">recommend</a></li>
           <li><a href="#offer">offer</a></li>
-          <li><a href="#section1">work</a></li>
+          <li><a href="#portfolio">work</a></li>
           <li><a href="#section2">team</a></li>
           <li><a href="#contact">contact us</a></li>                                                                             
         </ul>
@@ -152,6 +152,26 @@ Contact: support@blue-net.pl
 <section id="offer">
 </section>
 <!-- END OFFER -->
+
+
+<!-- BEGIN PORTFOLIO -->
+<section id="portfolio">
+	<div class="container">
+		
+		<div class="header">
+			<h3>fresh<br>designs</h3>
+			<p>Sed ut perspiciatis unde omnis iste natus voluptatem<br>accusantium doloremque laudantium.</p>
+		</div>
+		
+	</div>
+</section>
+<!-- END PORTFOLIO -->
+
+
+<!-- BEGIN TEAM -->
+<section id="team">
+</section>
+<!-- END TEAM -->
 
 
 
@@ -262,9 +282,11 @@ $(document).ready(function(){
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	$('#sectionLogo').parallax("50%", 0.1);
-	$('#recommend').parallax("50%", 0.1);
-	$('#offer').parallax("50%", 0.4);
-	$('#contact').parallax("50%", 0.3);
+	$('#recommend').parallax("50%", 0.2);
+	$('#offer').parallax("50%", 0.3);
+	$('#portfolio').parallax("0%", 0);
+	$('#team').parallax("50%", 0.4);
+	$('#contact').parallax("50%", 0.5);
 
 });
 </script>
