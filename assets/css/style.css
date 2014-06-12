@@ -389,6 +389,34 @@ a:hover{text-decoration:none;}
 	padding:4px 0 4px 28px;
 }
 
+#portfolio #portfolioProject ul li a{
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjZhMjFmIiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VlNjgyNSIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  rgba(246,162,31,0.75) 0%, rgba(238,104,37,0.75) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(246,162,31,0.75)), color-stop(100%,rgba(238,104,37,0.75))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(246,162,31,0.75) 0%,rgba(238,104,37,0.75) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(246,162,31,0.75) 0%,rgba(238,104,37,0.75) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(246,162,31,0.75) 0%,rgba(238,104,37,0.75) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(246,162,31,0.75) 0%,rgba(238,104,37,0.75) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bff6a21f', endColorstr='#bfee6825',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	position:absolute;
+	display:none;
+	width:100%;
+	height:100%;
+	top:0px;
+}
+
+#portfolio #portfolioProject ul li:hover a{
+	display:block;
+}
+
+#portfolio #portfolioProject ul li a span.projectGo{
+	background:url(../img/sectionFolio/search.png) no-repeat center;
+	display:block;
+	width:100%;
+	height:100%;
+}
+
 
 /**************************************************************
 ============	section team
