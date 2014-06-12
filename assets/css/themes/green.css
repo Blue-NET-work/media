@@ -68,6 +68,37 @@ body{
 
 
 /**************************************************************
+============	section portfolio
+**************************************************************/
+#portfolio{
+}
+
+#portfolio .header{
+	color:#283a39;
+}
+
+#portfolio .header .portfolio-list-action a{
+	color:#e5e5e5;
+}
+
+#portfolio .header .portfolio-list-action a:hover{
+	color:#2ab3ac; 
+}
+
+#portfolio #portfolioProject ul li h4{
+	color:#2ab3ac;
+}
+
+#portfolio #portfolioProject ul li p{
+	color:#283a39;
+}
+
+#portfolio #portfolioProject ul li a.more{
+	color:#2ab3ac; 
+}
+
+
+/**************************************************************
 ============	section footer
 **************************************************************/
 
