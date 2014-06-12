@@ -259,6 +259,9 @@ Contact: support@blue-net.pl
 
 <!-- BEGIN TEAM -->
 <section id="team">
+	<div class="lady"></div>
+	<div class="confetti"></div>
+	
 </section>
 <!-- END TEAM -->
 
@@ -383,6 +386,10 @@ $(document).ready(function(){
 	
 	//section team
 	$('#team').parallax("50%", 0.4);
+	$('#team .lady').parallax("right", 0.4);
+	$('#team .confetti').parallax("50%", 0.4);
+	
+	
 	
 	$("#projectListLarge").on("click", function(e){
 		e.preventDefault();

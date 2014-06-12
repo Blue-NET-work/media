@@ -396,11 +396,24 @@ a:hover{text-decoration:none;}
 #team{
 	background:url(../img/sectionTeam/bg.jpg) fixed no-repeat;
 	background-size:cover;
+	position:relative;
 	width:100%;
 	min-height:906px;
-	padding:60px 0;
 }
 
+#team .lady{
+	background:url(../img/sectionTeam/lady.png) no-repeat right center;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+#team .confetti{
+	background:url(../img/sectionTeam/confetti.png) no-repeat center;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
 
 /**************************************************************
 ============	section footer
