@@ -34,7 +34,10 @@ Contact: support@blue-net.pl
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,400italic,700,500italic,500,700italic,300|Roboto+Condensed:400italic,700italic,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   	<link href="assets/css/themes/green.css" rel="stylesheet" id="style-color">
-    
+
+    <!-- BEGIN bxslider -->
+    <link href="assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet">
+	<!-- END bxslider -->    
     
 	<!-- JavaScript at bottom except for Modernizr -->
 	<script src="assets/plugins/modernizr.custom.js"></script>
@@ -264,6 +267,7 @@ Contact: support@blue-net.pl
 	<div class="confettiOne"></div>
 	
 	<div class="container">
+	<!-- about desc -->
 		<div class="about">
 			<div class="row">
 				<div class="col-md-4">
@@ -275,6 +279,58 @@ Contact: support@blue-net.pl
 					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
 				</div>
 			</div>
+		</div>
+	<!-- person car.-->
+		<div class="persons">
+		
+			<div class="bx-persons">
+			  <div class="person">
+			  	<div class="img">
+			  		<img src="assets/img/sectionTeam/person1.png">
+					<span></span>
+			  	</div>
+			  	<div class="info">
+					<h4>ANNA NOWAK</h4>
+					<span>WEBDESIGNER</span>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			  </div>
+			  <div class="person">
+			  	<div class="img">
+					<img src="assets/img/sectionTeam/person2.png">
+					<span></span>
+			  	</div>
+				<div class="info">
+					<h4>Jan NOWAK</h4>
+					<span>WEBDEVENLOPMEN</span>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			  </div>
+			  <div class="person">
+			  	<div class="img">
+			  		<img src="assets/img/sectionTeam/person3.png">
+					<span></span>
+			  	</div>
+			  	<div class="info">
+					<h4>Marek NOWAK</h4>
+					<span>SEO</span>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			  </div>
+			</div>
+		
 		</div>
 	</div>
 	
@@ -428,14 +484,27 @@ $(document).ready(function(){
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		Layout.init();    
-		//Layout.initOWL();
-		//RevosliderInit.initRevoSlider();
 		Layout.initTwitter();
-		//Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-		//Layout.initNavScrolling(); 
 	});
 </script>
 <!-- END PAGE LEVEL JAVASCRIPTS -->
+
+	
+<!-- BEGIN bxslider -->
+<script type="text/javascript" src="assets/plugins/bxslider/jquery.bxslider.js"></script>
+<script>
+$(document).ready(function(){
+  $('.bx-persons').bxSlider({
+    slideWidth: 300,
+	pager : false,
+    minSlides: 3,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin: 10
+  });
+});
+</script>
+<!-- END bxslider -->
 
 
 <!-- BEGIN MAPS PLUGIN FILES -->
