@@ -233,7 +233,7 @@ Contact: support@blue-net.pl
         	<ul class="list-unstyled row m-b-20">
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project1.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-4">
 					<div class="padding-25">
@@ -244,51 +244,51 @@ Contact: support@blue-net.pl
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project2.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project3.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project4.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project5.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project6.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project7.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project8.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project9.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project10.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project11.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project12.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             	<li class="col-md-2">
                 	<img src="assets/img/sectionFolio/project13.jpg" alt="">
-                    <a href="#"><span class="projectGo"></span></a>
+                    <a href="#" class="projectShow"><span class="projectGo"></span></a>
                 </li>
             </ul>
         </div>
@@ -473,49 +473,11 @@ Contact: support@blue-net.pl
 <script src="assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script src="assets/plugins/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/plugins/jquery.parallax-1.1.3.js" type="text/javascript"></script>
-<script src="assets/plugins/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
 <script src="assets/plugins/jquery.scrollTo.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery.parallax-1.1.3.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.header-nav .nav').localScroll(800);
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	
-	//section logo
-	$('#sectionLogo').parallax("50%", 0.1);
-	
-	//section offer
-	$('#offer').parallax("50%", 0.3);
-	
-	//section team
-	$('#team').parallax("50%", 0.2, true);
-	$('#team .lady').parallax("100%", 0.2);
-	$('#team .confetti').parallax("50%", 2.2, false);
-	
-	
-	
-	$("#projectListLarge").on("click", function(e){
-		e.preventDefault();
-		$("#portfolioProject").find("li.col-md-2").addClass('col-md-3').removeClass('col-md-2');
-		$("#portfolioProject").find("li.col-md-4").addClass('col-md-6').removeClass('col-md-4');
-	});	
-	
-	$("#projectListStandard").on("click", function(e){
-		e.preventDefault();
-		$("#portfolioProject").find("li.col-md-3").addClass('col-md-2').removeClass('col-md-3');
-		$("#portfolioProject").find("li.col-md-6").addClass('col-md-4').removeClass('col-md-6');
-	});	
-
-});
-</script>
-
-
-
-<!-- PAGE LEVEL JAVASCRIPTS -->
+<!-- BEGIN PAGE LEVEL JAVASCRIPTS -->
 <script src="assets/scripts/layout.js" type="text/javascript"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
@@ -524,7 +486,7 @@ $(document).ready(function(){
 </script>
 <!-- END PAGE LEVEL JAVASCRIPTS -->
 
-	
+
 <!-- BEGIN bxslider -->
 <script type="text/javascript" src="assets/plugins/bxslider/jquery.bxslider.js"></script>
 <script>

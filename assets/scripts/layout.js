@@ -56,6 +56,48 @@ var Layout = function () {
             });
         }
     }
+	
+	var handleDefault = function (){
+		$('.header-nav .nav').localScroll(800);
+		$("#sectionLogo").animate({height: $(window).height()-62}, 600);
+	}
+	
+	var handleParallax = function (){
+		//.parallax(xPosition, speedFactor, outerHeight) options:
+		//xPosition - Horizontal position of the element
+		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+		
+		//section logo
+		$('#sectionLogo').parallax("50%", 0.1);
+		$('#sectionLogo .sectionLogoOrigamiBall').parallax("50%", 0.4, false);
+		$('#sectionLogo .sectionLogoOrigamiBird').parallax("50%", 0.4, false);
+		$('#sectionLogo .sectionLogoOrigamiBox').parallax("50%", 0.2, false);
+		
+		//section offer
+		$('#offer').parallax("50%", 0.2);
+		
+		//section team
+		$('#team').parallax("50%", 0.1);
+		$('#team .lady').parallax("100%", 0.3);
+		$('#team .confetti').parallax("50%", 0.6, false);
+	}
+	
+	var handleProject = function (){
+		// big img project 
+		$("#projectListLarge").on("click", function(e){
+			e.preventDefault();
+			$("#portfolioProject").find("li.col-md-2").addClass('col-md-3').removeClass('col-md-2');
+			$("#portfolioProject").find("li.col-md-4").addClass('col-md-6').removeClass('col-md-4');
+		});	
+		
+		// small img project
+		$("#projectListStandard").on("click", function(e){
+			e.preventDefault();
+			$("#portfolioProject").find("li.col-md-3").addClass('col-md-2').removeClass('col-md-3');
+			$("#portfolioProject").find("li.col-md-6").addClass('col-md-4').removeClass('col-md-6');
+		});	
+	}
 
     var handleTheme = function () {
     
@@ -90,6 +132,9 @@ var Layout = function () {
         init: function () {
             // init core variables
             handleTheme();
+            handleDefault();
+            handleParallax();
+            handleProject();
             handleInit();
             handleIEFixes();
         }
