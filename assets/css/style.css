@@ -261,6 +261,7 @@ a:hover{text-decoration:none;}
 **************************************************************/
 #offer{
 	background:url(../img/sectionOffer/bg.jpg) fixed no-repeat;
+	background-size:cover;
 	position:relative;
 	width:100%;
 	min-height:900px;
@@ -271,6 +272,7 @@ a:hover{text-decoration:none;}
 	position:absolute;
 	width:100%;
 	height:100%;
+	z-index:10;
 }
 
 #offer .phone{
@@ -280,6 +282,7 @@ a:hover{text-decoration:none;}
 	height:420px;
 	right: 10%;
 	top: -17%;
+	z-index:10;
 }
 
 #offer .smallBall{
@@ -288,7 +291,8 @@ a:hover{text-decoration:none;}
 	width:143px;
 	height:143px;
 	left:25%;
-	bottom:15%;
+	bottom:5%;
+	z-index:10;
 }
 
 #offer .ball{
@@ -298,12 +302,53 @@ a:hover{text-decoration:none;}
 	height:426px;
 	right:10%;
 	bottom:-17%;
+	z-index:10;
+}
+
+#offer .container{
+	position:relative;
+	z-index:20;
 }
 
 #offer .content{
-	height:350px;
-	margin-top:30px;
+	height:280px;
+	margin-top:80px;
 	margin-bottom:30px;
+}
+
+#offer .content h2{
+	width:200px;
+	display:inline-block;
+	color:#fff;
+	font-size:53px;
+	font-weight:600;
+	float:left;
+}
+
+#offer .content .offerText{
+	display:inline-block;
+	float:left;
+	width:55%;
+	color:#f3ede5;
+	font-size:12px;
+	font-weight:300;
+}
+
+#offer .content .offerText h3{
+	color:#fff;
+	font-size:30px;
+	font-weight:300;
+	margin-bottom:25px;
+	text-transform:uppercase;
+}
+
+#offer .content .offerText .more{
+	background:url(../img/sectionOffer/more.png) no-repeat center left;
+	display: block;
+	margin-top: 20px;
+	padding: 10px 0;
+	padding-left: 30px;
+	color: #fff;
 }
 
 
@@ -313,7 +358,7 @@ a:hover{text-decoration:none;}
 	-webkit-box-shadow:none;
 	box-shadow:none;
 	border:none;
-	margin-left:10px;
+	margin-left:5px;
 }
 
 #offer .bx-offer .offer{
@@ -321,11 +366,13 @@ a:hover{text-decoration:none;}
 	min-height:260px;
 	text-transform:uppercase;
 	transition:all 0.5s;
-	color:#fff;
+	color:rgba(255,255,255, .7);
 	font-size:12px;
 	font-weight:300;
 	text-align:center;
 }
+
+#offer .bx-offer .offer:hover{color:rgba(255,255,255, 1);}
 
 #offer .bx-offer .offer img{
 	margin:auto;
@@ -336,21 +383,24 @@ a:hover{text-decoration:none;}
 }
 
 #offer .bx-controls-direction a{
-	background:url(../img/sectionTeam/arrow.png) no-repeat;
-	width:9px;
-	height:16px;
+	background:url(../img/sectionOffer/sliderArrow.png) no-repeat;
+	width:30px;
+	height:30px;
 	top:45%;
 }
 
 #offer .bx-controls-direction .bx-prev{
-	background-position:left bottom;
-	left:-30px;
+	background-position:top left;
+	left:-50px;
 }
 
 #offer .bx-controls-direction .bx-next{
-	background-position:left top;
-	right:-30px;
+	background-position:top right;
+	right:-50px;
 }
+
+#offer .bx-controls-direction .bx-prev:hover{background-position:bottom left;}
+#offer .bx-controls-direction .bx-next:hover{background-position:bottom right;}
 
 
 /**************************************************************
