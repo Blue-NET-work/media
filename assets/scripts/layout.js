@@ -82,6 +82,32 @@ var Layout = function () {
 		$('#team .lady').parallax("100%", 0.3);
 		$('#team .confetti').parallax("50%", 0.9, false);
 	}
+
+    var handleFancybox = function () {
+        if (!jQuery.fancybox) {
+            return;
+        }
+        
+        jQuery(".fancybox-fast-view").fancybox();
+
+        if (jQuery(".fancybox-button").size() > 0) {            
+            jQuery(".fancybox-button").fancybox({
+                groupAttr: 'data-rel',
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: true,
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    }
+                }
+            });
+
+            $('.fancybox-video').fancybox({
+                type: 'iframe'
+            });
+        }
+    }
 	
 	var handleProject = function (){
 		// big img project 
@@ -135,6 +161,7 @@ var Layout = function () {
             handleDefault();
             handleParallax();
             handleProject();
+            handleFancybox();
             handleInit();
             handleIEFixes();
         }
