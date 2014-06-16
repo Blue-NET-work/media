@@ -80,7 +80,7 @@ var Layout = function () {
 		//section team
 		$('#team').parallax("50%", 0.1);
 		$('#team .lady').parallax("100%", 0.3);
-		$('#team .confetti').parallax("50%", 0.6, false);
+		$('#team .confetti').parallax("50%", 0.9, false);
 	}
 	
 	var handleProject = function (){
