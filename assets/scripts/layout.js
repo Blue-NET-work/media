@@ -79,7 +79,7 @@ var Layout = function () {
 		
 		//section team
 		$('#team').parallax("50%", 0.1);
-		//$('#team .lady').parallax("100%", 0.3);
+		$('#team .lady').parallax("100%", 0.1);
 		$('#team .confetti').parallax("50%", 0.9);
 	}
 
