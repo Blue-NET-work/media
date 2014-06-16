@@ -4,9 +4,75 @@ GMaps.js - A Javascript library that simplifies your life
 GMaps.js allows you to use the potential of Google Maps in a simple way. No more extensive documentation or large amount of code.
 
 Visit the examples in [hpneo.github.com/gmaps](http://hpneo.github.com/gmaps/)
+Go to the API Documentation [hpneo.github.io/gmaps/documentation.html](http://hpneo.github.io/gmaps/documentation.html)
+
+Build
+------
+
+If you would like to build gmaps from source run the following at the terminal:
+
+```sh
+git clone https://github.com/HPNeo/gmaps.git
+cd gmaps
+npm install
+grunt
+```
 
 Changelog
 ---------
+
+0.4.13
+-----------------------
+* Allow unitSystem setting in travelRoute
+* Add functionality to remove controls
+* Delegates non custom events to google.map
+* Convert featureType and elementType toLowerCase in static maps
+
+0.4.12
+-----------------------
+* Adds ability to listen for clicks on overlays
+
+0.4.11
+-----------------------
+* Add RadarSearch to the places layer
+* Update default control styles to match new Google Maps release.
+
+0.4.10
+-----------------------
+* Fix and optimize removeMarkers
+* Fix bug in addMarker (issue #270)
+
+0.4.9
+-----------------------
+* Add UMD support (AMD, CommonJS, browser globals)
+* Add retina support
+* FitZoom only use visible markers
+
+0.4.8
+-----------------------
+* Fix getRoutes
+
+0.4.7
+-----------------------
+* Add callback for failure in getRoutes
+* Update marker clusterer after remove marker
+* Add support for string arrays to arrayToLatLng
+
+0.4.6
+-----------------------
+* Allow initialising GMaps without new
+* Added styled map support for static maps
+* Fixed name display for styled maps
+* Allow no zoom for static map request
+
+0.4.5
+-----------------------
+* Fix IE8 bug using array_map
+* Add Grunt and Bower support
+
+0.4.4
+-----------------------
+* Fix buildContextMenu reference in addMarker
 
 0.4.3
 -----------------------
@@ -334,7 +400,7 @@ Changelog
 
 License
 ---------
-MIT License. Copyright 2012 Gustavo Leon. http://github.com/hpneo
+MIT License. Copyright 2014 Gustavo Leon. http://github.com/hpneo
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
