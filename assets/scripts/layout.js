@@ -70,7 +70,7 @@ var Layout = function () {
 		
 		//section logo
 		$('#sectionLogo').parallax("50%", 0.1);
-		$('#sectionLogo .sectionLogoOrigamiBall').parallax("50%", 0.4, false);
+		//$('#sectionLogo .sectionLogoOrigamiBall').parallax("50%", 0.4, false);
 		$('#sectionLogo .sectionLogoOrigamiBird').parallax("50%", 0.4, false);
 		$('#sectionLogo .sectionLogoOrigamiBox').parallax("50%", 0.2, false);
 		
