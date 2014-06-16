@@ -2,11 +2,6 @@
 /*
 Template Name: media-theme
 Version: 1.00.0
-Theme URI: http://Blue-NET.pl
-Author: Blue-NET Mateusz Serwinowski
-Author URI: http://Blue-NET.pl
-Contact: support@blue-net.pl
-Description: media-theme theme by Blue-NET
 License: Custom
 License URI: URI: http://themeforest.net/licenses
 */
@@ -104,7 +99,7 @@ a:hover{text-decoration:none;}
 	background: rgba(255,255,255,0.7);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px and max-width:1024px) {
 	.header-nav .navbar-nav > li > a{
 		padding:18px 10px;
 	}
@@ -149,6 +144,33 @@ a:hover{text-decoration:none;}
 	top:8%;
 	left:40%;
 	z-index:10;
+}
+
+#sectionLogo .info{
+	position:absolute;
+	color:#283a39;
+	font-size:12.98px;
+	font-weight:300;
+	font-style:italic;
+	width:350px;
+	top:12%;
+	z-index:20;
+}
+
+#sectionLogo .info h2{
+	color:#283a39;
+	font-size:52.74px;
+	font-style:normal;
+	font-weight:600;
+	text-transform:uppercase;
+	margin-bottom:30px;
+	
+	background: -webkit-linear-gradient(-45deg, #6c4c36, #355f55);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background: -moz-linear-gradient(-45deg, #6c4c36, #355f55); /* FF3.6+ */
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 #sectionLogo .logo{
@@ -339,6 +361,13 @@ a:hover{text-decoration:none;}
 	font-weight:600;
 	float:left;
 	margin-right:30px;
+	
+	background: -webkit-linear-gradient(-45deg, #f3d1b7, #fdf7f2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background: -moz-linear-gradient(-45deg, #f3d1b7, #fdf7f2); /* FF3.6+ */
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 #offer .content .offerText{
@@ -448,6 +477,13 @@ a:hover{text-decoration:none;}
 	font-weight:600;
 	text-transform:uppercase;
 	margin-bottom:40px;
+	
+	background: -webkit-linear-gradient(-45deg, #3e5834, #374f36, #2a3d39);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background: -moz-linear-gradient(-45deg, #3e5834, #374f36, #2a3d39); /* FF3.6+ */
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 #portfolio .header .portfolio-list-action a{
@@ -584,7 +620,7 @@ a:hover{text-decoration:none;}
 #team .about{
 	width:600px;
 	color:#f3ede5;
-	font-size:12px;
+	font-size:11.37px;
 	font-weight:300;
 	margin-top:100px;
 	text-align:justify;
@@ -596,6 +632,17 @@ a:hover{text-decoration:none;}
 	font-size:53px;
 	color:#ffffff;
 	font-weight:600;
+	
+	background: -webkit-linear-gradient(-45deg, #e7d5a7, #fbf7e0, #e3c284);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background: -moz-linear-gradient(-45deg, #e7d5a7, #fbf7e0, #e3c284); /* FF3.6+ */
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+#team .about p{
+	margin-bottom:30px;
 }
 
 #team .persons{
@@ -911,6 +958,12 @@ Styler Panel
 }
 .color-turquoise {
 	background: #44b1c1;
+}
+.color-yellow {
+	background: #d4b900;
+}
+.color-mode li.color-lime {
+  background: #08c330;
 }
 .color-mode label {
   color: #cfcfcf;

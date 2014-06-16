@@ -17,84 +17,40 @@ body{
 /**************************************************************
 ============	Header
 **************************************************************/
-.header-nav{
+.topbar span {
+	color: #159892;
 }
 
-.topbar{
-}
-
-.topbar span{
-	color:#159892;
-}
-
-.header-nav .navbar-nav > li > a{
-}
-
-.header-nav .navbar-nav > li > a:hover{
-}
-
-
-/**************************************************************
-============	section logo
-**************************************************************/
-#sectionLogo{
-}
 
 /**************************************************************
 ============	section recommend
 **************************************************************/
-#recommend .header h3{
-	color:#159892;
+#recommend .header h3 {
+	color: #2ab3ac;
 }
 
-#recommend .header p{
-	color:#656b69;
+#recommend h4 {
+	color: #2ab3ac;
 }
 
-#recommend h4{
-	color:#159892;
+#recommend .row div:hover h4 {
+	color: #ef6f24;
 }
 
-#recommend p{
-	color:#283a39;
-}
-
-
-/**************************************************************
-============	section offer
-**************************************************************/
-#offer{
+#recommend .img i.fa {
+	color: #2ab3ac;
 }
 
 
 /**************************************************************
 ============	section portfolio
 **************************************************************/
-#portfolio{
+#portfolio #portfolioProject ul li h4 {
+	color: #2ab3ac;
 }
 
-#portfolio .header{
-	color:#283a39;
-}
-
-#portfolio .header .portfolio-list-action a{
-	color:#e5e5e5;
-}
-
-#portfolio .header .portfolio-list-action a:hover{
-	color:#2ab3ac; 
-}
-
-#portfolio #portfolioProject ul li h4{
-	color:#2ab3ac;
-}
-
-#portfolio #portfolioProject ul li p{
-	color:#283a39;
-}
-
-#portfolio #portfolioProject ul li a.more{
-	color:#2ab3ac; 
+#portfolio #portfolioProject ul li a.more {
+	color: #2ab3ac;
 }
 
 
@@ -106,21 +62,14 @@ body{
 /***********************************
 // CONTACT DATA
 ***********************************/
-.contactData{
-	color:#283a39;
+#footer form button {
+	background: #2ab3ac;
+	color: #fff;
 }
-
-#footer form button{
-	background:#159892;
-}
-
 
 /***********************************
 // COPYRIGHT 
 ***********************************/
-#copyright a.social{
-}
-
-#copyright a.social:hover{
-	background:#159892;
+#copyright a.social:hover {
+	background: #159892;
 }

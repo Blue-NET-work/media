@@ -17,53 +17,40 @@ body{
 /**************************************************************
 ============	Header
 **************************************************************/
-.header-nav{
+.topbar span {
+	color: #e84d1c;
 }
 
-.topbar{
-}
-
-.topbar span{
-	color:#e84d1c;
-}
-
-.header-nav .navbar-nav > li > a{
-}
-
-.header-nav .navbar-nav > li > a:hover{
-}
-
-
-/**************************************************************
-============	section logo
-**************************************************************/
-#sectionLogo{
-}
 
 /**************************************************************
 ============	section recommend
 **************************************************************/
-#recommend .header h3{
+#recommend .header h3 {
+	color: #e84d1c;
+}
+
+#recommend h4 {
+	color: #e84d1c;
+}
+
+#recommend .row div:hover h4 {
+	color: #2ab3ac;
+}
+
+#recommend .img i.fa {
 	color:#e84d1c;
-}
-
-#recommend .header p{
-	color:#656b69;
-}
-
-#recommend h4{
-	color:#e84d1c;
-}
-
-#recommend p{
-	color:#283a39;
 }
 
 
 /**************************************************************
-============	section offer
+============	section portfolio
 **************************************************************/
-#offer{
+#portfolio #portfolioProject ul li h4 {
+	color: #e84d1c;
+}
+
+#portfolio #portfolioProject ul li a.more {
+	color: #e84d1c;
 }
 
 
@@ -75,21 +62,14 @@ body{
 /***********************************
 // CONTACT DATA
 ***********************************/
-.contactData{
-	color:#283a39;
+#footer form button {
+	background: #e84d1c;
+	color: #fff;
 }
-
-#footer form button{
-	background:#e84d1c;
-}
-
 
 /***********************************
 // COPYRIGHT 
 ***********************************/
-#copyright a.social{
-}
-
-#copyright a.social:hover{
-	background:#e84d1c;
+#copyright a.social:hover {
+	background: #e84d1c;
 }

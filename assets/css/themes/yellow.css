@@ -18,7 +18,7 @@ body{
 ============	Header
 **************************************************************/
 .topbar span {
-	color: #64aed9;
+	color: #d4b900;
 }
 
 
@@ -26,19 +26,19 @@ body{
 ============	section recommend
 **************************************************************/
 #recommend .header h3 {
-	color: #64aed9;
+	color: #d4b900;
 }
 
 #recommend h4 {
-	color: #64aed9;
+	color: #d4b900;
 }
 
 #recommend .row div:hover h4 {
-	color: #ef6f24;
+	color: #e84d1c;
 }
 
 #recommend .img i.fa {
-	color: #64aed9;
+	color: #d4b900;
 }
 
 
@@ -46,11 +46,11 @@ body{
 ============	section portfolio
 **************************************************************/
 #portfolio #portfolioProject ul li h4 {
-	color: #64aed9;
+	color: #d4b900;
 }
 
 #portfolio #portfolioProject ul li a.more {
-	color: #64aed9;
+	color: #d4b900;
 }
 
 
@@ -63,7 +63,7 @@ body{
 // CONTACT DATA
 ***********************************/
 #footer form button {
-	background: #64aed9;
+	background: #d4b900;
 	color: #fff;
 }
 
@@ -71,5 +71,5 @@ body{
 // COPYRIGHT 
 ***********************************/
 #copyright a.social:hover {
-	background: #64aed9;
+	background: #d4b900;
 }
