@@ -14,23 +14,23 @@ body{
 **************************************************************/
 
 .pace .pace-progress {
-  background: #08c330;
+  background: #89CC1E;
 }
 
 .pace .pace-progress-inner {
-	box-shadow: 0 0 10px #2ab3ac, 0 0 5px #08c330;
+	box-shadow: 0 0 10px #2ab3ac, 0 0 5px #89CC1E;
 }
 
 .pace .pace-activity {
-  border-top-color: #08c330;
-  border-left-color: #08c330;
+  border-top-color: #89CC1E;
+  border-left-color: #89CC1E;
 }
 
 /**************************************************************
 ============	Header
 **************************************************************/
 .topbar span {
-	color: #08c330;
+	color: #89CC1E;
 }
 
 
@@ -38,11 +38,11 @@ body{
 ============	section recommend
 **************************************************************/
 #recommend .header h3 {
-	color: #08c330;
+	color: #89CC1E;
 }
 
 #recommend h4 {
-	color: #08c330;
+	color: #89CC1E;
 }
 
 #recommend .row div:hover h4 {
@@ -50,7 +50,7 @@ body{
 }
 
 #recommend .img i.fa {
-	color: #08c330;
+	color: #89CC1E;
 }
 
 
@@ -58,11 +58,11 @@ body{
 ============	section portfolio
 **************************************************************/
 #portfolio #portfolioProject ul li h4 {
-	color: #08c330;
+	color: #89CC1E;
 }
 
 #portfolio #portfolioProject ul li a.more {
-	color: #08c330;
+	color: #89CC1E;
 }
 
 
@@ -75,7 +75,7 @@ body{
 // CONTACT DATA
 ***********************************/
 #footer form button {
-	background: #08c330;
+	background: #89CC1E;
 	color: #fff;
 }
 
@@ -83,5 +83,5 @@ body{
 // COPYRIGHT 
 ***********************************/
 #copyright a.social:hover {
-	background: #08c330;
+	background: #89CC1E;
 }

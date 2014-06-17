@@ -947,25 +947,25 @@ Styler Panel
   background: #64aed9;
 }
 .color-mode li.color-red {
-  background: #e84d1c;
+  background: #D93246;
 }
 .color-mode li.color-green {
-  background: #159892;
+  background: #1DB47B;
 }
 .color-mode li.color-orange {
-  background: #e18604;
+  background: #EA430C;
 }
-.color-gray {
-	background: #798b97;
+.color-mode li.color-gray {
+	background: #3D414C;
 }
-.color-turquoise {
-	background: #44b1c1;
+.color-mode li.color-turquoise {
+	background: #159892;
 }
-.color-yellow {
-	background: #d4b900;
+.color-mode li.color-yellow {
+	background: #F1B90E;
 }
 .color-mode li.color-lime {
-  background: #08c330;
+  background: #89CC1E;
 }
 .color-mode label {
   color: #cfcfcf;
