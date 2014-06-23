@@ -639,7 +639,7 @@ a:hover {text-decoration:none;}
 	
 	/* description about team */
 	#team .about {
-		width:600px;
+		max-width:600px;
 		color:#f3ede5;
 		font-size:12px;
 		font-weight:300;
