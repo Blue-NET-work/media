@@ -222,15 +222,15 @@ a:hover {text-decoration:none;}
 	#sectionLogo .logo {
 		position:relative;
 		z-index:30;
-		width:498px;
-		height:498px;
+		max-width:498px;
+		max-height:498px;
 		margin: 40% auto 0;
 		}
 		#sectionLogo .logo #logo {
-			background:url(../img/sectionLogo/logo.png) no-repeat;
+			background:url(../img/sectionLogo/logo.png) no-repeat center;
 			display:block;
-			width:498px;
-			height:498px;
+			max-width:498px;
+			max-height:498px;
 			margin:-249px auto 0;
 		}
 
