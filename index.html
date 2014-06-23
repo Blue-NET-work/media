@@ -327,7 +327,6 @@ Version: 1.00.0
 				<div class="col-md-8">
 					<p><strong>Sed ut perspiciatis unde omnis iste natus</strong> error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
 				</div>
 			</div>
 		</div>
@@ -496,9 +495,9 @@ Version: 1.00.0
 <!-- BEGIN PAGE LEVEL JAVASCRIPTS -->
 <script src="assets/scripts/layout.js" type="text/javascript"></script>
 <script type="text/javascript">
-	jQuery(document).ready(function() {
-		Layout.init();    
-	});
+	(function($) { "use strict";
+		Layout.init();   
+	})(jQuery);
 </script>
 <!-- END PAGE LEVEL JAVASCRIPTS -->
 
@@ -506,7 +505,7 @@ Version: 1.00.0
 <!-- BEGIN bxslider -->
 <script type="text/javascript" src="assets/plugins/bxslider/jquery.bxslider.js"></script>
 <script>
-$(document).ready(function(){
+(function($) { "use strict";
   $('.bx-offer').bxSlider({
     slideWidth: 250,
 	pager : false,
@@ -523,7 +522,7 @@ $(document).ready(function(){
     moveSlides: 1,
     slideMargin: 10
   });
-});
+})(jQuery);
 </script>
 <!-- END bxslider -->
 
@@ -533,7 +532,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="assets/plugins/gmaps/gmaps.js"></script>
 <script type="text/javascript">
 var map;
-$(document).ready(function(){
+(function($) { "use strict";
   map = new GMaps({
 	el: '#map',
 	lat: -12.043333,
