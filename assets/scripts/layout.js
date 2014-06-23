@@ -164,6 +164,26 @@ var Layout = function () {
             handleFancybox();
             handleInit();
             handleIEFixes();
+			
+			
+			var map;
+			$(document).ready(function(){
+			  map = new GMaps({
+				div: '#map',
+				lat: -12.043333,
+				lng: -77.028333,
+				zoomControl : true,
+				zoomControlOpt: {
+					style : 'SMALL',
+					position: 'TOP_LEFT'
+				},
+				panControl : false,
+				streetViewControl : false,
+				mapTypeControl: false,
+				overviewMapControl: false
+		        });
+			});
+			
         }
 
     };
