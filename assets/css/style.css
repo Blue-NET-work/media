@@ -916,6 +916,9 @@ footer {
 		#sectionLogo .sectionLogoOrigamiBird{
 			display:none;
 		}
+		#sectionLogo .info{
+			top:40%;
+		}
 	
 	/* offer */
 	#offer{
@@ -958,7 +961,24 @@ footer {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+	
+	/* sectionLogo */
+	#sectionLogo {
+		}
+		#sectionLogo .sectionLogoOrigamiBall,
+		#sectionLogo .sectionLogoOrigamiBird{
+			display:block;
+		}
+	
+	/* offer */
+	#offer{
+		}	
+		#offer .phone,
+		#offer .ball{
+			display:block;
+		}
+		
 	#offer .phone{
 		right:0;
 	}
