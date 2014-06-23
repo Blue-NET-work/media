@@ -26,6 +26,10 @@ License URI: URI: http://themeforest.net/licenses
 /**************************************************************
 ============	Header
 **************************************************************/
+.header-nav .navbar-collapse.collapse.in{
+	border-bottom:1px solid #64aed9;
+}
+
 .topbar span {
 	color: #64aed9;
 }
