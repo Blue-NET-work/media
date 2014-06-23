@@ -229,8 +229,8 @@ a:hover {text-decoration:none;}
 		#sectionLogo .logo #logo {
 			background:url(../img/sectionLogo/logo.png) no-repeat center;
 			display:block;
-			min-width:250px;
-			min-height:250px;
+			width:100%;
+			height:100%;
 			max-width:498px;
 			max-height:498px;
 			margin:-249px auto 0;
@@ -918,49 +918,52 @@ footer {
 			left:0%;
 		}
 		#sectionLogo .sectionLogoOrigamiBall,
-		#sectionLogo .sectionLogoOrigamiBird{
+		#sectionLogo .sectionLogoOrigamiBird {
 			display:none;
 		}
-		#sectionLogo .info{
+		#sectionLogo .info {
 			top:40%;
+		}
+		#sectionLogo .logo #logo {
+			position:absolute;
 		}
 	
 	/* offer */
-	#offer{
+	#offer {
 		}	
 		#offer .phone,
-		#offer .ball{
+		#offer .ball {
 			display:none;
 		}
-		.bx-offer{
+		.bx-offer {
 			max-width:700px;
 		}
-		#offer .bx-controls-direction .bx-prev{
+		#offer .bx-controls-direction .bx-prev {
 			left:10px;
 		}
-		#offer .bx-controls-direction .bx-next{
+		#offer .bx-controls-direction .bx-next {
 			right:10px;
 		}
 	
 	/* team */
-	#team .persons{
+	#team .persons {
 		}	
-		#team .persons .bx-controls-direction .bx-prev{
+		#team .persons .bx-controls-direction .bx-prev {
 			left:10px;
 		}
-		#team .persons .bx-controls-direction .bx-next{
+		#team .persons .bx-controls-direction .bx-next {
 			right:10px;
 		}
 		
 	/*background size */
 	#sectionLogo, 
 	#offer,
-	#team{
+	#team {
 		background-size: inherit;
 	}
 	
 	/* contact data */
-	.contactData h3{
+	.contactData h3 {
 		margin-top:45px;
 		text-align:left;
 	}
@@ -969,12 +972,12 @@ footer {
 
 @media (min-width: 769px and max-width:1024px) {
 	/* header-nav */
-	.header-nav .navbar-nav > li > a{
+	.header-nav .navbar-nav > li > a {
 		padding:18px 10px;
 	}
 	
 	/* sectionLogo */
-	#sectionLogo .sectionLogoOrigamiBox{
+	#sectionLogo .sectionLogoOrigamiBox {
 		left:auto;
 		right:0;
 	}
@@ -986,19 +989,19 @@ footer {
 	#sectionLogo {
 		}
 		#sectionLogo .sectionLogoOrigamiBall,
-		#sectionLogo .sectionLogoOrigamiBird{
+		#sectionLogo .sectionLogoOrigamiBird {
 			display:block;
 		}
 	
 	/* offer */
-	#offer{
+	#offer {
 		}	
 		#offer .phone,
-		#offer .ball{
+		#offer .ball {
 			display:block;
 		}
 		
-	#offer .phone{
+	#offer .phone {
 		right:0;
 	}
 }
