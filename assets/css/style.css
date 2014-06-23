@@ -930,11 +930,26 @@ footer {
 		#offer .ball{
 			display:none;
 		}
+		.bx-offer{
+			max-width:700px;
+		}
+		#offer .bx-controls-direction .bx-prev{
+			left:10px;
+		}
+		#offer .bx-controls-direction .bx-next{
+			right:10px;
+		}
 	
 	/* team */
 	#team .persons{
 		padding-left:18px;
-	}
+		}	
+		#team .bx-controls-direction .bx-prev{
+			left:10px;
+		}
+		#team .bx-controls-direction .bx-next{
+			right:10px;
+		}
 		
 	/*background size */
 	#sectionLogo, 
