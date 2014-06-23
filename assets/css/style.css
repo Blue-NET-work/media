@@ -942,12 +942,11 @@ footer {
 	
 	/* team */
 	#team .persons{
-		padding-left:18px;
 		}	
-		#team .bx-controls-direction .bx-prev{
+		#team .persons .bx-controls-direction .bx-prev{
 			left:10px;
 		}
-		#team .bx-controls-direction .bx-next{
+		#team .persons .bx-controls-direction .bx-next{
 			right:10px;
 		}
 		
