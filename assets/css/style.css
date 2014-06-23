@@ -213,9 +213,6 @@ a:hover {text-decoration:none;}
 			background: -webkit-linear-gradient(-45deg, #6c4c36, #355f55);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			background: -moz-linear-gradient(-45deg, #6c4c36, #355f55); /* FF3.6+ */
-			-moz-background-clip: text;
-			-moz-text-fill-color: transparent;
 		}
 		
 	/* logo */		
@@ -397,9 +394,6 @@ a:hover {text-decoration:none;}
 			background: -webkit-linear-gradient(-45deg, #f3d1b7, #fdf7f2);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			background: -moz-linear-gradient(-45deg, #f3d1b7, #fdf7f2); /* FF3.6+ */
-			-moz-background-clip: text;
-			-moz-text-fill-color: transparent;
 		}
 		#offer .content .offerText {
 			display:inline-block;
@@ -509,9 +503,6 @@ a:hover {text-decoration:none;}
 			background: -webkit-linear-gradient(-45deg, #3e5834, #374f36, #2a3d39);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			background: -moz-linear-gradient(-45deg, #3e5834, #374f36, #2a3d39); /* FF3.6+ */
-			-moz-background-clip: text;
-			-moz-text-fill-color: transparent;
 		}
 		#portfolio .header .portfolio-list-action a {
 			color:#e5e5e5;
@@ -653,13 +644,11 @@ a:hover {text-decoration:none;}
 			font-size:53px;
 			color:#ffffff;
 			font-weight:600;
+			margin-bottom:30px;
 			
 			background: -webkit-linear-gradient(-45deg, #e7d5a7, #fbf7e0, #e3c284);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			background: -moz-linear-gradient(-45deg, #e7d5a7, #fbf7e0, #e3c284); /* FF3.6+ */
-			-moz-background-clip: text;
-			-moz-text-fill-color: transparent;
 		}
 		#team .about p {
 			margin-bottom:30px;
@@ -964,6 +953,7 @@ footer {
 	/* contact data */
 	.contactData h3 {
 		margin-top:45px;
+		text-align:left !important;
 	}
 }
 
