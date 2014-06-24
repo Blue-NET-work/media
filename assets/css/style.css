@@ -123,14 +123,16 @@ a:hover {text-decoration:none;}
 			padding-top:20px;
 			color:#283a39;
 			}
-			.header-nav .topbar .fa {
-				padding-left:5px; 
-				padding-right:3px;
-			}
-			.header-nav .topbar span {
-				color:#159892;
-				font-weight:bold;
-			}
+			.header-nav .topbar .responsive{
+					padding-left:5px; 
+				}
+				.header-nav .topbar .fa {
+					padding-right:3px;
+				}
+				.header-nav .topbar .responsive span {
+					color:#159892;
+					font-weight:bold;
+				}
 	
 	/* header menu section */
 	.header-nav .navbar-collapse.collapse.in {
@@ -197,7 +199,7 @@ a:hover {text-decoration:none;}
 		font-size:12.98px;
 		font-weight:300;
 		font-style:italic;
-		width:350px;
+		max-width:350px;
 		top:12%;
 		z-index:20;
 		text-shadow: 0 0 1px rgba(40,58,57,0.5);
@@ -878,6 +880,53 @@ footer {
 /*------------------------------------------------------------------
 	[12. Responsive]
 ------------------------------------------------------------------*/
+
+@media (max-width: 300px) {
+	
+	/* sectionLogo */
+	#sectionLogo {
+		}
+		#sectionLogo .info h2 {
+			font-size: 32.74px;
+		}
+}
+
+@media (max-width: 460px) {
+	/* header-nav */
+	.header-nav {
+		padding:0px 8px;
+		}
+		.header-nav .topbar{
+			padding-top:15px;
+			}
+			.header-nav .responsive {
+				display:block;
+				padding-left:0 !important;
+			}
+	
+	/* sectionLogo */
+	#sectionLogo {
+		}
+		#sectionLogo .info h2 {
+			font-size: 40.74px;
+		}
+		#sectionLogo .logo #logo{
+			margin-left: 5%;
+		}
+	/* portfolio */
+	#portfolio{
+		}
+		#portfolio #portfolioProject .apple {
+			display:none;
+		}
+	
+	/* team */
+	#team{
+		}
+		#team .about h3{
+			font-size: 40.74px;
+		}
+}
 
 @media (max-width: 768px) {
 	/* header-nav */
