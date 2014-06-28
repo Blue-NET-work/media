@@ -908,34 +908,13 @@ footer {
 	#sectionLogo {
 		}
 		#sectionLogo .info h2 {
-			font-size: 26.74px;
+			font-size: 40.74px;
 		}
 		#sectionLogo .logo #logo{
 			margin-left: 5%;
 		}
-	/* recomend */
-	#recommend{
-		}
-		#recommend .header h3{
-			font-size: 26.74px;
-		}
-	/* offer */
-	#offer{
-		}
-		#offer .content h2{
-			font-size: 26.74px;
-		}
-		#offer .content .offerText{
-			width:100%;
-			}
-			#offer .content .offerText h3{
-				font-size: 20px;
-			}
 	/* portfolio */
 	#portfolio{
-		}
-		#portfolio .header h3{
-			font-size: 26.74px;
 		}
 		#portfolio #portfolioProject .apple {
 			display:none;
@@ -945,16 +924,8 @@ footer {
 	#team{
 		}
 		#team .about h3{
-			font-size: 26.74px;
+			font-size: 40.74px;
 		}
-	/* contact */
-	.contactData h3.titleTag{
-		font-size: 26.74px;
-	}
-	/* maps */
-	#maps{
-		display:none;
-	}
 }
 
 @media (max-width: 768px) {
@@ -967,7 +938,8 @@ footer {
 			margin-right:0;
 		}
 		.header-nav .navbar-nav > li > a {
-			padding:5px 10px;
+			padding-top:5px;
+			padding-bottom:5px;
 		}
 		.header-nav .navbar-collapse.collapse.in {
 			padding-bottom:10px;
@@ -1009,24 +981,16 @@ footer {
 		#offer .bx-controls-direction .bx-next {
 			right:10px;
 		}
-	/* portfolio */
-	#portfolio{
-		padding-top:40px;
-	}
+	
 	/* team */
-	#team{
+	#team .persons {
+		}	
+		#team .persons .bx-controls-direction .bx-prev {
+			left:10px;
 		}
-		#team .about{
-			margin-top: 60px;
+		#team .persons .bx-controls-direction .bx-next {
+			right:10px;
 		}
-		#team .persons {
-			}	
-			#team .persons .bx-controls-direction .bx-prev {
-				left:10px;
-			}
-			#team .persons .bx-controls-direction .bx-next {
-				right:10px;
-			}
 		
 	/*background size */
 	#sectionLogo, 
@@ -1036,33 +1000,9 @@ footer {
 	}
 	
 	/* contact data */
-	.contactData{
-		}
-		.contactData h3 {
-			margin-top:45px;
-			text-align:left !important;
-		}
-		.contactData .contactlocation,
-		.contactData .contactphone{
-			margin-bottom:20px;
-		}
-		.contactData hr{
-			margin:30px 0 10px;
-		}
-	
-	/* maps */
-	#maps{
-		display:none;
-	}
-	
-	/* copyright */
-	#copyright{
-		padding:15px 0;
-	}
-	
-	/* space-mobile */
-	.space-mobile{
-		margin-bottom:15px;
+	.contactData h3 {
+		margin-top:45px;
+		text-align:left !important;
 	}
 }
 
