@@ -76,7 +76,6 @@ var Layout = function () {
 		
 		//section team
 		$('#team').parallax("50%", 0.1);
-		$('#team .confetti').parallax("50%", 0.9);
 	}
 
     var handleFancybox = function () {
