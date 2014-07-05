@@ -578,14 +578,6 @@ a:hover {text-decoration:none;}
 	min-height:900px;
 }
 	/* background elements */
-	#team .confetti {
-		background:url(../img/sectionTeam/confetti.png) no-repeat center top;
-		position:absolute;
-		width:100%;
-		height:100%;
-		z-index:3;
-	}
-	
 	#team .ring1{
 		background:url(../img/sectionTeam/ring1.png) no-repeat;
 		position:absolute;
