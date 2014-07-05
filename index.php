@@ -382,18 +382,51 @@ Version: 1.00.0
 		<section id="footer">
 			<div class="row" id="contact">
 				<div class="col-md-8 col-sm-7 space-mobile">
-					<form role="form" style="width:90%;" class="m-t-50">
+				
+                    <?php    
+                    if(isset($_POST['item'])){
+						$item = $_POST['item'];
+					
+						require_once('assets/plugins/phpmailer/class.phpmailer.php');
+
+						$mail             = new PHPMailer(); // defaults to using php "mail()"
+						
+						$body = "NAME/SURNAME: ".$item['name']."(".$item['email'].")\nPHONE NUMBER: ".$item['phone']."\n\n".$item['desc'];
+						
+						$mail->AddReplyTo("biuro@blue-net.pl", "Biuro Blue-NET"); // change to You adres and name
+						$mail->SetFrom("biuro@blue-net.pl", "Biuro Blue-NET"); // change to You adres and name
+						$mail->AddReplyTo("biuro@blue-net.pl", "Biuro Blue-NET"); // change to You adres and name
+						
+						$mail->AddAddress($item['email'], $item['name']);
+						
+						$mail->Subject    = $item['subject'];
+						
+						$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
+						
+						$mail->MsgHTML($body);
+						
+						if(!$mail->Send()) {
+						  echo "<div class='alert alert-danger' style='width:90%'><span class='glyphicon glyphicon-ban-circle'></span> The message has not been sent!!!<br>";
+						  echo "Mailer Error: " . $mail->ErrorInfo;
+						  echo "</div>"; 
+						} else {echo "<div class='alert alert-success' style='width:90%'><span class='glyphicon glyphicon-ok'></span> The message has been sent.</div>";}
+						
+                    }  
+							
+                    ?>
+					
+					<form role="form" style="width:90%;" class="m-t-50" method="post" action="#contact">
 						<div class="row">
 							<div class="col-md-6">
 							<!-- form block -->
 								<div class="input-group m-b-20">
 								  <span class="input-group-addon"><i class="fa fa-users"></i></span>
-								  <input type="text" class="form-control" placeholder="NAME/SURNAME">
+								  <input type="text" class="form-control" name="item[name]" placeholder="NAME/SURNAME">
 								</div>
 								
 								<div class="input-group m-b-20">
 								  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-								  <input type="text" class="form-control" placeholder="PHONE NUMBER">
+								  <input type="text" class="form-control" name="item[phone]" placeholder="PHONE NUMBER">
 								</div>
 							<!-- form block -->
 							</div>
@@ -401,17 +434,17 @@ Version: 1.00.0
 							<!-- form block -->
 								<div class="input-group m-b-20">
 								  <span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
-								  <input type="text" class="form-control" placeholder="SUBJECT">
+								  <input type="text" class="form-control" name="item[subject]" placeholder="SUBJECT">
 								</div>
 								
 								<div class="input-group m-b-20">
 								  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-								  <input type="text" class="form-control" placeholder="E-MAIL ADDRESS">
+								  <input type="text" class="form-control" name="item[email]" placeholder="E-MAIL ADDRESS">
 								</div>
 							<!-- form block -->
 							</div>
 						</div>
-						<textarea placeholder="MESSAGE" class="form-control m-b-20" rows="8"></textarea>
+						<textarea placeholder="MESSAGE" name="item[desc]" class="form-control m-b-20" rows="8"></textarea>
 						
 						<button type="submit" class="btn btn-default"><i class="fa fa-2x fa-envelope"></i></button>
 					</form>
