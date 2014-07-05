@@ -70,16 +70,12 @@ var Layout = function () {
 		
 		//section logo
 		$('#sectionLogo').parallax("50%", 0.1);
-		//$('#sectionLogo .sectionLogoOrigamiBall').parallax("50%", 0.4, false);
-		$('#sectionLogo .sectionLogoOrigamiBird').parallax("50%", 0.4, false);
-		$('#sectionLogo .sectionLogoOrigamiBox').parallax("50%", 0.2, false);
 		
 		//section offer
 		$('#offer').parallax("50%", 0.2);
 		
 		//section team
 		$('#team').parallax("50%", 0.1);
-		$('#team .lady').parallax("100%", 0.1);
 		$('#team .confetti').parallax("50%", 0.9);
 	}
 
@@ -132,8 +128,6 @@ var Layout = function () {
         // handle theme colors
         var setColor = function (color) {
             $('#style-color').attr("href", "assets/css/themes/" + color + ".css");
-            //$('.corporate .site-logo img').attr("src", "../../assets/frontend/layout/img/logos/logo-corp-" + color + ".png");
-            //$('.ecommerce .site-logo img').attr("src", "../../assets/frontend/layout/img/logos/logo-shop-" + color + ".png");
         }
 
         $('.icon-color', panel).click(function () {
