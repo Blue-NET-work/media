@@ -163,23 +163,13 @@ a:hover {text-decoration:none;}
 	min-height:832px;
 }
 	/* elements background */
-	#sectionLogo .sectionLogoOrigamiFlowe {
-		background:url(../img/sectionLogo/flowe.png) no-repeat;
+	#sectionLogo .sectionLogoFlower{
+		background:url(../img/sectionLogo/flower.png) no-repeat;
 		position:absolute;
-		width:348px;
-		height:248px;
-		bottom:20%;
+		width:457px;
+		height:392px;
+		bottom:-5%;
 		z-index:10;
-	}
-
-	#sectionLogo .sectionLogoOrigamiConfetti {
-		background:url(../img/sectionLogo/confetti.png) no-repeat;
-		position:absolute;
-		width:166px;
-		height:283px;
-		top:30%;
-		right:20%;
-		z-index:11;
 	}
 	
 	/* sectionlogo description */
@@ -202,7 +192,7 @@ a:hover {text-decoration:none;}
 			text-transform:uppercase;
 			margin-bottom:30px;
 			
-			background: -webkit-linear-gradient(-45deg, #914119, #532f27, #6f3721);
+			background: -webkit-linear-gradient(-45deg, #7a2e39, #524554);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -219,9 +209,9 @@ a:hover {text-decoration:none;}
 			background:url(../img/sectionLogo/logo.png) no-repeat center;
 			display:block;
 			width:100%;
-			height:498px;
-			max-width:498px;
-			margin:-249px auto 0;
+			height:294px;
+			max-width:268px;
+			margin:-149px auto 0;
 		}
 
 
@@ -327,22 +317,14 @@ a:hover {text-decoration:none;}
 	min-height:900px;
 }
 	/* element background */
-	#offer .confetti {
-		background:url(../img/sectionOffer/confetti.png) no-repeat;
+	#offer .creme {
+		background:url(../img/sectionOffer/creme.png) no-repeat;
 		position:absolute;
-		width:166px;
-		height:283px;
-		right:35%;
-		top:25%;
+		width:636px;
+		height:371px;
+		right:15%;
+		bottom:-13%;
 		z-index:10;
-	}
-	#offer .flower{
-		background:url(../img/sectionOffer/flower.png) no-repeat bottom;
-		position:absolute;
-		width:457px;
-		height:402px;
-		right:10%;
-		bottom:-10%;
 	}
 
 /* container */
@@ -493,7 +475,7 @@ a:hover {text-decoration:none;}
 			position:absolute;
 			width:689px;
 			height:693px;
-			top:-25%; 
+			top:15%; 
 			left:-25%;
 		}
 		#portfolio #portfolioProject ul li.col-md-2,
@@ -578,22 +560,20 @@ a:hover {text-decoration:none;}
 	min-height:900px;
 }
 	/* background elements */
-	#team .ring1{
-		background:url(../img/sectionTeam/ring1.png) no-repeat;
+	#team .flower{
+		background:url(../img/sectionTeam/flower.png) no-repeat;
 		position:absolute;
-		width:115px;
-		height:120px;
-		top:50%;
-		left:10%;
+		width:100%;
+		height:100%;
 	}
 	
-	#team .ring2{
-		background:url(../img/sectionTeam/ring2.png) no-repeat;
+	#team .flower1{
+		background:url(../img/sectionTeam/flower1.png) no-repeat;
 		position:absolute;
-		width:247px;
-		height:172px;
-		top:90%;
-		left:2%;
+		width:323px;
+		height:260px;
+		bottom:-5%;
+		left:4%;
 		z-index:4;
 	}
 	
@@ -616,7 +596,7 @@ a:hover {text-decoration:none;}
 			font-weight:600;
 			margin-bottom:30px;
 			
-			background: -webkit-linear-gradient(-45deg, #b9b9b9, #e1e1e1);
+			background: -webkit-linear-gradient(-45deg, #e0305d, #ee3969);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -1040,8 +1020,7 @@ footer {
 	/* sectionLogo */
 	#sectionLogo {
 		}
-		#sectionLogo .sectionLogoOrigamiFlowe,
-		#sectionLogo .sectionLogoOrigamiConfetti {
+		#sectionLogo .sectionLogoFlowe {
 			display:block;
 		}
 	
@@ -1128,6 +1107,9 @@ Styler Panel
 }
 .color-mode li.color-red1 {
   background: #f03925;
+}
+.color-mode li.color-pink {
+  background: #e52e5d;
 }
 .color-mode li.color-green {
   background: #1DB47B;
